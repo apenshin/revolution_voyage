@@ -171,7 +171,7 @@
         input.name = name;
         input.value = value;
         
-        / Добавляем input в div
+        // Добавляем input в div
         fieldWrapper.appendChild(input);
                     
         // Добавляем div в форму
