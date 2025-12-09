@@ -167,7 +167,7 @@
         
         // Создаем новое скрытое поле
         const input = document.createElement('input');
-        input.type = 'text';
+        input.type = 'hidden';
         input.name = name;
         input.value = value;
         
