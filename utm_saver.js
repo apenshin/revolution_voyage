@@ -159,6 +159,11 @@
             existingField.value = value;
             return;
         }
+        const fieldWrapper = document.createElement('div');
+        fieldWrapper.setAttribute('data-type-field', 'text');
+        
+        fieldWrapper.className = 'form__field utm-field';
+        
         
         // Создаем новое скрытое поле
         const input = document.createElement('input');
@@ -166,7 +171,11 @@
         input.name = name;
         input.value = value;
         
-        form.appendChild(input);
+        / Добавляем input в div
+        fieldWrapper.appendChild(input);
+                    
+        // Добавляем div в форму
+        form.appendChild(fieldWrapper);
     }
     
     // Проверяем, нужно ли добавлять это поле
