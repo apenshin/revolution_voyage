@@ -1,7 +1,3 @@
-<!-- Вставьте этот код перед </body> на всех страницах -->
-
-<div style="display: none;">
-    <script>
         (function() {
             'use strict';
             
@@ -54,5 +50,3 @@
             });
             
         })();
-    </script>
-</div>
